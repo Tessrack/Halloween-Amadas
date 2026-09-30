@@ -416,7 +416,7 @@
     }
 
     .drink-card:hover {
-      transform: translateY(-4px);
+      transform: translateY(-8px) scale(1.015);
       background: var(--bg-surface-elevated);
       box-shadow: 0 18px 45px rgba(0, 0, 0, 0.75), 0 0 28px var(--card-accent-glow, rgba(255, 84, 0, 0.35));
     }
@@ -427,7 +427,7 @@
     }
 
     .drink-card:active {
-      transform: none;
+      transform: scale(0);
     }
 
     /* Card Top Meta */
@@ -690,10 +690,12 @@
     }
 
     .modal-media-target img {
-      width: 165px;
-      height: 165px;
+      width: 100px;
+      max-width: 240px;
+      height: 280px;
       border-radius: var(--radius-md);
-      object-fit: cover;
+      object-fit: contain;
+      background: rgba(0,0,0,0.3)
       box-shadow: 0 12px 30px rgba(0, 0, 0, 0.8);
       border: 2.5px solid var(--modal-accent-color);
     }
